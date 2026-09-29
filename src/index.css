@@ -14,6 +14,10 @@
   * {
     @apply border-border;
   }
+
+  img {
+    @apply max-w-full h-auto;
+  }
 }
 
 @layer utilities {
@@ -32,5 +36,9 @@
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
     }
+  }
+
+  .touch-manipulation {
+    touch-action: manipulation;
   }
 }

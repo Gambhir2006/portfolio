@@ -75,16 +75,6 @@ export const portfolioData = {
       description: "Developed a responsive portfolio website showcasing education, skills and projects.",
     },
   ],
-  certifications: [
-    "Deloitte",
-    "KPMG",
-    "AWS",
-    "JPMorgan Chase",
-    "Walmart",
-    "IndiaAI",
-    "NPTEL",
-    "Coursera",
-  ],
   achievements: [
     "Won certificates and trophies in university-level cricket competitions.",
     "Participated in professional cricket and Fit India sports competitions.",

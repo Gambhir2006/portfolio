@@ -42,20 +42,20 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gradient-to-b from-gray-900 to-black">
+    <section id="skills" className="py-16 sm:py-20 bg-gradient-to-b from-gray-900 to-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Technical Skills</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {skillCategories.map((category, index) => {
             const Icon = category.icon;
             return (
@@ -66,19 +66,20 @@ const Skills = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ scale: 1.02 }}
-                className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300"
+                whileTap={{ scale: 0.98 }}
+                className="bg-white/5 backdrop-blur-lg rounded-2xl p-5 sm:p-6 border border-white/10 hover:border-white/20 transition-all duration-300"
               >
-                <div className="flex items-center mb-4">
-                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${category.color} flex items-center justify-center mr-4`}>
-                    <Icon className={`w-6 h-6 ${category.iconColor}`} />
+                <div className="flex items-center mb-3 sm:mb-4">
+                  <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br ${category.color} flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0`}>
+                    <Icon className={`w-5 h-5 sm:w-6 sm:h-6 ${category.iconColor}`} />
                   </div>
-                  <h3 className="text-xl font-semibold text-white">{category.title}</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold text-white">{category.title}</h3>
                 </div>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2">
                   {category.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="px-3 py-1 bg-white/10 text-gray-300 text-sm rounded-full hover:bg-white/20 transition-colors duration-200"
+                      className="px-2 sm:px-3 py-1 bg-white/10 text-gray-300 text-xs sm:text-sm rounded-full hover:bg-white/20 transition-colors duration-200"
                     >
                       {skill}
                     </span>
