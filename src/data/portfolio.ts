@@ -19,11 +19,11 @@ export const portfolioData = {
     ],
   },
   skills: {
-    programming: ["C++", "Python", "JavaScript"],
-    frontend: ["HTML", "CSS", "React.js"],
-    aiBackend: ["Ollama", "Llama 3.2", "Generative AI", "Flask", "API Integration"],
-    dataAnalytics: ["Power BI", "MS Excel", "SPSS Modeler"],
-    tools: ["Git", "GitHub", "MS Word", "PowerPoint"],
+    programming: ["C++", "Python", "JavaScript", "Node.js"],
+    frontend: ["HTML", "CSS", "React.js", "Vite", "Tailwind CSS"],
+    aiBackend: ["Ollama", "Llama 3.2", "Generative AI", "Flask", "Express.js", "API Integration"],
+    dataAnalytics: ["Power BI", "MS Excel", "SPSS Modeler", "MongoDB Atlas"],
+    tools: ["Git", "GitHub", "JWT", "bcrypt", "Leaflet", "OpenStreetMap", "MS Word", "PowerPoint"],
   },
   experience: [
     {
@@ -48,6 +48,13 @@ export const portfolioData = {
     },
   ],
   projects: [
+    {
+      name: "BloodBridge - Emergency Blood Donor Matcher",
+      category: "Real-World Problem Solving",
+      technology: ["React", "Vite", "Tailwind CSS", "Node.js", "Express.js", "MongoDB Atlas", "JWT", "bcrypt", "Leaflet", "OpenStreetMap"],
+      description: "Built a complete emergency blood donor matching platform addressing real-world blood shortage challenges. Features include donor registration, emergency blood requests, AI-assisted donor matching based on blood group, location distance, and availability. Implemented secure authentication with JWT, map integration with Leaflet/OpenStreetMap, and deployed full-stack application on Vercel and Render.",
+      liveDemo: "https://lnkd.in/d8xCJuzk",
+    },
     {
       name: "Personal AI Assistant",
       technology: ["React", "Ollama", "Llama 3.2"],
