@@ -21,8 +21,8 @@ export const portfolioData = {
   skills: {
     programming: ["C++", "Python", "JavaScript", "Node.js"],
     frontend: ["HTML", "CSS", "React.js", "Vite", "Tailwind CSS"],
-    aiBackend: ["Ollama", "Llama 3.2", "Generative AI", "Flask", "Express.js", "API Integration"],
-    dataAnalytics: ["Power BI", "MS Excel", "SPSS Modeler", "MongoDB Atlas"],
+    aiBackend: ["Ollama", "Llama 3.2", "Generative AI", "Flask", "Express.js", "API Integration", "AI"],
+    dataAnalytics: ["Power BI", "MS Excel", "SPSS Modeler", "MongoDB Atlas", "Data Analytics"],
     tools: ["Git", "GitHub", "JWT", "bcrypt", "Leaflet", "OpenStreetMap", "MS Word", "PowerPoint"],
   },
   experience: [
@@ -54,6 +54,13 @@ export const portfolioData = {
       technology: ["React", "Vite", "Tailwind CSS", "Node.js", "Express.js", "MongoDB Atlas", "JWT", "bcrypt", "Leaflet", "OpenStreetMap"],
       description: "Built a complete emergency blood donor matching platform addressing real-world blood shortage challenges. Features include donor registration, emergency blood requests, AI-assisted donor matching based on blood group, location distance, and availability. Implemented secure authentication with JWT, map integration with Leaflet/OpenStreetMap, and deployed full-stack application on Vercel and Render.",
       liveDemo: "https://lnkd.in/d8xCJuzk",
+    },
+    {
+      name: "The Doc Mirror - AI-Powered Healthcare Analytics Platform",
+      category: "Healthcare Analytics",
+      technology: ["AI", "Full Stack Development", "Data Analytics", "React", "Modern Web Technologies"],
+      description: "Built a modern AI-powered digital visibility and analytics platform for doctors and medical practices, featuring intelligent insights, performance analytics, and actionable recommendations through a clean, responsive dashboard. Delivered AI-powered analysis, comprehensive analytics dashboard, digital visibility tools, responsive UI, and data-driven insights for healthcare professionals.",
+      liveDemo: "https://the-doc-mirror.vercel.app/",
     },
     {
       name: "Personal AI Assistant",
